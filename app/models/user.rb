@@ -5,5 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
 
-  has_many :pins       
+  has_many :pins
+
+  validates :name, presence: true       
 end
